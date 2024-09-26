@@ -1,0 +1,23 @@
+{
+  "name": "@repo/kafka-common",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "exports": {
+    "./*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "22.0.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "kafkajs": "2.2.4"
+  }
+}

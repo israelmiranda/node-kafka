@@ -1,0 +1,20 @@
+{
+  "name": "new-order-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "22.0.0",
+    "@types/uuid": "9.0.8",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@repo/kafka-common": "workspace:*",
+    "uuid": "9.0.1"
+  }
+}
