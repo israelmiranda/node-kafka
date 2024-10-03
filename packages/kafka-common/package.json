@@ -6,9 +6,17 @@
     "build": "tsc"
   },
   "exports": {
-    "./*": {
-      "types": "./src/*.ts",
-      "default": "./dist/*.js"
+    "./kafka-consumer": {
+      "types": "./src/kafka-consumer.ts",
+      "default": "./dist/kafka-consumer.js"
+    },
+    "./kafka-dispatcher": {
+      "types": "./src/kafka-dispatcher.ts",
+      "default": "./dist/kafka-dispatcher.js"
+    },
+    "./kafka-admin": {
+      "types": "./src/kafka-admin.ts",
+      "default": "./dist/kafka-admin.js"
     }
   },
   "devDependencies": {
